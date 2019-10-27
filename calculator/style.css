@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+.calculator {
+    width: 375px;
+    height: 667px;
+    background-color: rgb(34, 19, 10);
+}
+
+header {
+    height: 214px;
+}
+
+.sum-wrap {
+    padding: 140px 18px 0 18px;
+}
+
+.sum-area {
+    width: 350px;
+    box-sizing: border-box;
+    border: none;
+    padding: 0 10px;
+    outline: none;
+    background-color: inherit;
+    text-align: right;
+    font-size: 80px;
+    color: #fff;
+}
+
+.button-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 75px;
+    grid-auto-rows: 75px;
+    column-gap: 12px;
+    grid-row-gap: 12px;
+    padding: 15px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    font-size: 35px
+}
+
+.symbol {
+    background-color: #dddddd;
+    color: #22130a;
+    font-size: 28px;
+}
+
+.oparator {
+    background-color: #f4aa3b;
+    color: #fff;
+    font-size: 32px;
+}
+
+.number {
+    background-color: #4a4545;
+    color: #fff;
+}
+
+.number0 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: #4a4545;
+    border-radius: 34px;
+    color: #fff;
+}
+
+.memo {
+  width: 375px;
+  margin: 10px 0 0 0;
+  text-align: center;
+}
+
+article {
+  margin: 100px 0 0 20px;
+}
+
+article > div {
+    margin: 0 0 40px 0;
+}
+
+ul {
+  margin: 0 0 20px 0;
+  padding: 0 0 0 60px;
+  list-style-type: circle;
+}
+
+li {
+  display: list-item;
+  line-height: 1.5em;
+}
+
+h1, h2, h3 {
+  color: #555;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+.target > p {
+  padding: 0 0 0 60px;
+}
+
+.tag1, .tag2, .tag3 {
+  width: 200px;
+  margin: 0 0 20px 0;
+  box-shadow: -3px 3px 4px rgba(68, 68, 68, 0.2),
+              3px 3px 4px rgba(68, 68, 68, 0.1);
+  text-align: center;
+}
+
+.tag1 {
+  height: 80px;
+  border-left: solid 20px #197ae6;
+  line-height: 80px;
+}
+
+.tag2 {
+  height: 50px;
+  border-left: solid 20px #32aa00;
+  line-height: 50px;
+}
+
+.tag3 {
+  height: 30px;
+  border-left: solid 20px #ffcc00;
+  margin: 0 0 20px 20px;
+  line-height: 30px;
+}
+
+.error-list .back li {
+  text-decoration: line-through;;
+}
+
+@media (min-width: 600px){
+    body {
+        display: flex;
+    }
+}

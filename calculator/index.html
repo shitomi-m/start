@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Oparator</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width">
+
+</head>
+<body>
+  <div class="calculator">
+   <header>
+        <div class="sum-wrap">
+          <input type="text" class="sum-area" value="0" id="sum">
+        </div>
+    </header>
+    <div class="button-wrap">
+        <input type="submit" class="btn symbol" value="AC" id="clear" onclick="funClear();">
+        <input type="submit" class="btn symbol" value="+/-">
+        <input type="submit" class="btn symbol" value="%">
+        <input type="submit" class="btn oparator" value="÷" id="division" onclick="selectCalc(this);">
+        <input type="submit" class="btn number" value="7" id="seven" onclick="pushValue(this);assignment();countNums();">
+        <input type="submit" class="btn number" value="8" id="eight" onclick="pushValue(this);assignment();countNums();">
+        <input type="submit" class="btn number" value="9" id="nine" onclick="pushValue(this);assignment();countNums();">
+        <input type="submit" class="btn oparator" value="×" id="multiply" onclick="selectCalc(this);">
+        <input type="submit" class="btn number" value="4" id="four" onclick="pushValue(this);assignment();countNums();">
+        <input type="submit" class="btn number" value="5" id="five" onclick="pushValue(this);assignment();countNums();">
+        <input type="submit" class="btn number" value="6" id="six" onclick="pushValue(this);assignment();countNums();">
+        <input type="submit" class="btn oparator" value="-" id="subtraction" onclick="selectCalc(this);">
+        <input type="submit" class="btn number" value="1" id="one" onclick="pushValue(this);assignment();countNums();">
+        <input type="submit" class="btn number" value="2" id="two" onclick="pushValue(this);assignment();countNums();">
+        <input type="submit" class="btn number" value="3" id="three" onclick="pushValue(this);assignment();countNums();">
+        <input type="submit" class="btn oparator" value="+" id="addition" onclick="selectCalc(this);">
+        <input type="submit" class="btn number0" value="0" id="zero" onclick="pushValue(this);assignment();countNums();">
+        <input type="submit" class="btn number" value="." id="dot"  onclick="pushValue(this);assignment();">
+        <input type="submit" class="btn oparator" value="=" id="equal" onclick="equal();">
+      </div>
+  </div>
+
+  <article>
+    <div class="target">
+      <h1 class="tag1">目標</h1>
+      <p>iPhoneの電卓に出来るだけ近づける</p>
+    </div>
+    <div class="error-list">
+      <h2 class="tag2">直すリスト</h2>
+      <h3 class="tag3">機能</h3>
+      <ul class="back">
+        <li>演算子を連続して押した時の挙動（一番最後に押した演算子の計算だけする）</li>
+      </ul>
+      <h3 class="tag3">フロント</h3>
+      <ul class="front">
+        <li>入力された数字が画面内に常に収まるように表示する</li>
+        <li>計算結果がマイナスの時のカンマの位置</li>
+      </ul>
+    </div>
+    <div class="improve">
+      <h2 class="tag2">追加するリスト</h2>
+      <h3 class="tag3">機能</h3>
+      <ul class="back">
+        <li>小数点を使えるようにする</li>
+        <li>ACボタンとCボタンの切り替え</li>
+        <li>マイナスとプラスの切り替え</li>
+        <li>パーセント計算</li>
+      </ul>
+      <h3 class="tag3">フロント</h3>
+      <ul class="front">
+        <li>ボタンを押した時の色の変化（UI）</li>
+      </ul>
+    </div>
+  </article>
+
+<script type="text/javascript" src="main7.js" charset="utf-8"></script>
+</body>
+</html>
