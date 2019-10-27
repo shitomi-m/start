@@ -15,7 +15,7 @@ $(function(){
              $('.show-menu').slideUp(400).animate({top:"18px"});         
         }else{
             $('.show-menu').slideDown(200);
-            $('.show-menu').animate({top:"15px"},400);     
+            $('.show-menu').animate({top:"15px"},400);   
         }     
     });
     
