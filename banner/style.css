@@ -350,64 +350,6 @@
     }
 }
 
-
-.banner6 {
-    width: 300px;
-    height: 250px;
-    position: relative;
-    box-sizing: border-box;
-    background-color: #4dadea;
-    background-image: radial-gradient(circle, #3ca3e3 55%, transparent 30%),
-        radial-gradient(circle, #3ca3e3 55%, transparent 30%);
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
-    overflow: hidden;
-}
-
-.flame-bnr6 {
-    width: 280px;
-    height: 230px;
-    position: absolute;
-    top: 8.5px;
-    left: 7px;
-    z-index: 3;
-    border: solid 3px #fff;
-}
-
-.middle-bnr6 {
-    position: absolute;
-    top: 80px;
-    right: 0;
-    border-top: solid transparent 90px;
-    border-bottom: solid #fff 90px;
-    border-right: solid #fff 200px;
-    border-left: solid transparent 200px;
-}
-
-.foot-bnr6 {
-    position: absolute;
-    top: 170px;
-    left: 0;
-    border-top: solid transparent 40px;
-    border-bottom: solid #f5e418 40px;
-    border-right: solid transparent 180px;
-    border-left: solid #f5e418 180px;
-}
-
-.circle:before {
-    content: '';
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 10px;
-    left: 5px;
-    border-radius: 50%;
-    background-image: radial-gradient(#000 10%, transparent 20%),
-        radial-gradient(#000 10%, transparent 20%);
-    background-size: 10px 10px;
-    background-position: 0 0, 20px 20px;
-}
-
 .banner7 {
     width: 300px;
     height: 300px;
