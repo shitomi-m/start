@@ -1,0 +1,513 @@
+@charset "UTF-8";
+
+body {
+    background-color: #f8f9fa;
+    font-family: sans-serif;
+    color: #333;
+}
+
+h1, h2, h3{
+    font-family: 'Fredoka One', cursive;
+}
+
+h2 {
+    padding: 0 0 25px 0;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+h3 {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+
+p {
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.fade-in {
+    opacity: 0;
+}
+
+/* mordal */
+#mordal-wrap {   
+    display: none;
+    text-align: center;
+}
+
+.mordal { 
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    background-image: url(img/mordal_img.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+
+#close-mordal {
+    position: relative;
+    top: -2px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 25px;    
+}
+
+#close-mordal:hover {
+    color: #4b74f2;
+}
+
+.mordal p {
+    font-size: 18px;
+}
+
+.mordal a {
+    position: relative;
+    top: 65%;
+    font-size: 8px;
+    color: #868686;
+}
+
+#mordal-overray {
+    width: 100%;
+    height: 120%;
+    display: none;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.8);
+}
+
+/* header */
+header {
+    height: 66px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: #262626;
+    box-shadow: 0 0.5px 1px rgba(51, 51, 51, 0.6);
+    color: #f2f2f2;
+}
+
+.menu-box {
+    padding: 13px 18px 0 0;
+    text-align: right;
+}
+
+header h1 {
+    padding: 9px 18px 9px 18px;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    background-size: 800% 800%;
+    background-image: linear-gradient(-90deg, #5dc495 0%, #5cafb2 46%, #46acbe 59%, #4b74f2 100%);
+    background-size: 600% 600%;
+    animation: BackgroundColor 9s ease infinite;
+}
+
+.clip {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.fa-bars {
+    font-size: 34px;
+}
+
+li {
+    list-style: none;
+}
+
+.menu-box input {
+    display: none; 
+}
+
+.menu-list {
+    margin: 0 5px 0 0;
+    padding: 6px 12px;
+    border: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #262626;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    color: inherit;
+}
+
+.show-menu {
+    height: auto;
+    width: auto;
+    padding: 0;
+    display: none;
+    position: relative;
+    top: 18px;
+    opacity: 1;
+}
+
+/* hero */
+.hero {
+    position: relative;
+    background-size: cover;
+    height: 400px;
+    border-bottom-right-radius: calc(100% / 2);
+    border-bottom-left-radius: calc(100% / 2);
+    background-image: linear-gradient(-90deg, #44c489 0%, #28a9ae 46%, #28a2b7 59%, #4b74f2 100%);
+    background-size: 600% 600%;
+    animation: BackgroundColor 9s ease infinite;
+    text-align: center;
+}
+
+.hero:before {
+    content: '';
+    width: 180px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+    background-image: linear-gradient(-90deg, #44c489 0%, #28a9ae 46%, #28a2b7 59%, #4b74f2 100%);
+    background-size: 600% 600%;
+    animation: BackgroundColor 9s ease infinite;
+}
+
+.hero:after {
+    content: '';
+    width: 90px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+    background-image: linear-gradient(-90deg, #44c489 0%, #28a9ae 46%, #28a2b7 59%, #4b74f2 100%);
+    background-size: 600% 600%;
+    animation: BackgroundColor 9s ease infinite;
+}
+
+.hero-text {
+    margin: 100px auto;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    font-family: 'Fredoka One', cursive;
+    font-size: 80px;
+    letter-spacing: 0.05em;
+    color: #fff;
+} 
+
+@keyframes BackgroundColor { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* work */
+.work {
+    padding: 200px 18px 0 18px;
+}
+
+.article-title {
+    padding: 0 0 25px 0;
+    text-align: center;
+}
+
+.title {
+    padding: 10px 16px;
+    display: inline-block;
+    background-color: #fff;
+    border: solid 2px #868686;
+    border-bottom: solid 7px #868686;
+    border-radius: 90px;
+}
+
+.article-title:before {
+    content: '\f111';
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 95px;
+    left: 0;
+    font-family:  "Font Awesome 5 Free";
+    font-size: 10px;
+    font-weight: 900;
+    color: #868686;
+}
+
+.article-title:after {
+    content: '';
+    width: 2px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    background-color: #868686;
+}
+
+.in-work {
+    width: 325px;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    background-color: #818383;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.tag-in-work {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    background-color: #262626;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+}
+
+.tag-in-work .fas {
+    margin: 17.5px 0;
+    font-size: 40px;
+    color: #fff; 
+}
+
+.in-work > a {
+    width: 70%;
+    margin: 10px;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.7;
+    color: #ffffff;
+}
+
+.banner {
+    margin: 10px auto;
+}
+
+/* profile */
+.profile {
+    width: 325px;
+    margin: auto;
+    padding: 80px 18px 0 18px;
+}
+
+.name {
+    padding: 0 0 25px 0;
+}
+
+.name-en {
+    padding: 5px 0 0 0;
+}
+
+.profile-text {
+    padding: 0 0 40px 0;
+}
+
+.job-histry {
+    text-align: center;
+}
+
+.job-history-wrap {
+    width: 190px;
+    height: 50px;
+    margin: auto;
+    background-color: #fff;
+    border: solid 0.5px #c7cacb;
+    border-radius: 4px;
+    box-shadow: 5px 8px 5px #c7cacb;
+    
+}
+
+.job-history-wrap p {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    line-height: 50px;
+    text-align: center;
+}
+
+.contact-in-profile {
+    padding: 80px 0 0 0;
+}
+
+.contact-wrap {
+    width: 325px;
+    height: 150px;
+    margin: auto;
+    position: relative;
+    background: repeating-linear-gradient(45deg, #f5f6f7, #f5f6f7 6px, #f8f9fa 6px, #f8f9fa 12px);
+    border: solid 2px #dddede;
+    box-shadow: 7px 7px #dddede;
+}
+
+.contact-h3 {
+    padding: 5px 13px; 
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-color: #747474; 
+    color: #fff;
+}
+
+.adress-wrap {
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    padding: 50px 20px 20px 20px;
+    text-align: center;
+}
+
+.adress-coment {
+    padding: 0 0 20px 0;
+}
+
+.atention {
+    font-size: 10px;
+    color: #ff6767;
+}
+
+/* question */
+.question {
+    padding: 80px 18px 30px 18px;
+}
+
+/* footer */
+footer {
+    height: 50px;
+    padding: 0 18px;
+    background-color: #262626;
+}
+
+.to-top-page-footer {
+    height: 50px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    line-height: 50px;
+    color: #f2f2f2;
+}
+
+.top-page-link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    padding: 12px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.fa-walking {
+    padding: 0 0 0 8px;
+}
+
+/* PC版 */
+@media (min-width: 600px){
+
+.hero-text {
+        font-size: 100px;
+}    
+    
+.profile, .question {
+    padding: 120px 18px 0 18px;
+}
+
+.article-title {
+        padding: 0 0 50px 0;
+    }
+    
+.tag-wrap {
+    display: flex;
+    justify-content:space-around;
+}
+
+.in-work {
+    width: 400px;
+    height: 115px;
+    margin: 0;
+}
+    
+.tag-in-work {
+    width: 115px;
+    height: 115px;
+}
+
+.tag-in-work .fas {
+    margin: 37.5px 0;
+}
+
+ .banner {
+      margin: 0 0 0 10px;  
+    }    
+
+.profile {
+    width: 80%;
+}
+
+.profile-wrap {
+    display: flex;
+}
+
+.introduction {
+    width: 50%;
+    padding: 0 80px 0 0;
+}
+
+.name {
+    padding: 0 0 60px 0;
+}
+
+.profile-text {
+    padding: 0 0 0 0;
+}
+
+.comming {
+    padding: 0 0 30px 0;
+    text-align: center;
+}   
+    
+}
+
+/* PC版（大） */
+@media (min-width: 1025px){
+    
+aside {
+    padding: 0 0 0 130px;
+} 
+    
+.menu-box .fas {
+    display: none;
+}
+    
+.show-menu {
+    display: block;
+}
+    
+.menu-list {
+    font-size: 18px;        
+}   
+    
+}
+
